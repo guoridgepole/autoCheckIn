@@ -84,7 +84,7 @@ func main() {
 	从配置文件中取出登录信息
 */
 func getLoginInfo() string {
-	file, err := ioutil.ReadFile("login_info.yaml")
+	file, err := ioutil.ReadFile("./login_info.yaml")
 	if err != nil {
 		panic(err)
 	}

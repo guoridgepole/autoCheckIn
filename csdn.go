@@ -65,7 +65,7 @@ func main() {
 	从配置文件中取出csdn登录信息
 */
 func getCsdnLoginInfo() string {
-	file, err := ioutil.ReadFile("login_info.yaml")
+	file, err := ioutil.ReadFile("./login_info.yaml")
 	if err != nil {
 		panic(err)
 	}
